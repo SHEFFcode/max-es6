@@ -28,8 +28,13 @@ function (number, compare = 10) { //10 is a default value
 //shorthand object variable assignments
 let name = 'Anna';
 let age = 25;
+let maxAge = 'age';
 
 let obj = {
 	name, // same as name: name
-	age // same as age: age
+	age, // same as age: age
+	[maxAge]: 28, //this will set a property 'age' on the object with value of 28
+	greet() { //shorthand function def greet: function () { }
+		console.log(this.name + ' ' + this.age);
+	}
 }
