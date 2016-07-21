@@ -24,3 +24,12 @@ console.log(func(3));
 function (number, compare = 10) { //10 is a default value
 	return number === compare;
 }
+
+//shorthand object variable assignments
+let name = 'Anna';
+let age = 25;
+
+let obj = {
+	name, // same as name: name
+	age // same as age: age
+}
