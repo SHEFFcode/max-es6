@@ -19,3 +19,8 @@ var fn = () => console.log('hello');
 var func = a => a + 5; // if there is only one argument, you can leave off the paranthesis
 
 console.log(func(3));
+
+//default values
+function (number, compare = 10) { //10 is a default value
+	return number === compare;
+}
